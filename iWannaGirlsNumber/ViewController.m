@@ -45,7 +45,13 @@
     self.okButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [self.okButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.okButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
+    _tapAnywhere = [[UITapGestureRecognizer alloc]init];
+    [self.tapAnywhere addTarget:self action:@selector(tapAnywhereAction)];
+    [self.view addGestureRecognizer: self.tapAnywhere];
+}
 
+- (void)tapAnywhereAction {
+    [self.phoneInput resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

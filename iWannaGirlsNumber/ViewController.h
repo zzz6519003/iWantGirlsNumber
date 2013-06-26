@@ -14,4 +14,8 @@
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
 @property (weak, nonatomic) IBOutlet FUIButton *okButton;
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneInput;
+
+//TODO
+@property (strong, nonatomic) UITapGestureRecognizer *tapAnywhere;
 @end
