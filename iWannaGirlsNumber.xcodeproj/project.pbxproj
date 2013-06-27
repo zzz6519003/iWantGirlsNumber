@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184CBB9E177BCCF000196603 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CBB9C177BCCF000196603 /* SettingViewController.m */; };
+		184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184CBB9D177BCCF000196603 /* SettingViewController.xib */; };
 		189E4FAF177937FF00302139 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FAE177937FF00302139 /* UIKit.framework */; };
 		189E4FB1177937FF00302139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FB0177937FF00302139 /* Foundation.framework */; };
 		189E4FB3177937FF00302139 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FB2177937FF00302139 /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184CBB9B177BCCF000196603 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		184CBB9C177BCCF000196603 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		184CBB9D177BCCF000196603 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		189E4FAB177937FF00302139 /* iWannaGirlsNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWannaGirlsNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E4FAE177937FF00302139 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		189E4FB0177937FF00302139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +162,9 @@
 				189E4FD51779385D00302139 /* ViewController.h */,
 				189E4FD61779385D00302139 /* ViewController.m */,
 				189E4FD31779384F00302139 /* ViewController.xib */,
+				184CBB9B177BCCF000196603 /* SettingViewController.h */,
+				184CBB9C177BCCF000196603 /* SettingViewController.m */,
+				184CBB9D177BCCF000196603 /* SettingViewController.xib */,
 				189E4FB5177937FF00302139 /* Supporting Files */,
 			);
 			path = iWannaGirlsNumber;
@@ -298,6 +306,7 @@
 				189E50181779389500302139 /* Lato-Light.ttf in Resources */,
 				189E50191779389500302139 /* Lato-LightItalic.ttf in Resources */,
 				189E501A1779389500302139 /* Lato-Regular.ttf in Resources */,
+				184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +335,7 @@
 				189E50031779388200302139 /* UITabBar+FlatUI.m in Sources */,
 				189E50041779388200302139 /* FUISegmentedControl.m in Sources */,
 				189E50051779388200302139 /* UITableViewCell+FlatUI.m in Sources */,
+				184CBB9E177BCCF000196603 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +450,7 @@
 				189E4FD0177937FF00302139 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

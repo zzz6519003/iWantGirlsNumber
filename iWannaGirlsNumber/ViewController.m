@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SettingViewController.h"
 
 #import "ViewController.h"
 #import "UIColor+FlatUI.h"
@@ -74,5 +75,11 @@
     alertView.defaultButtonTitleColor = [UIColor asbestosColor];
     [alertView show];
 }
+
+- (IBAction)settingClicked:(id)sender {
+    SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"" bundle:nil];
+    [self presentViewController:sv animated:NO completion:nil];
+}
+
 
 @end
