@@ -77,8 +77,9 @@
 }
 
 - (IBAction)settingClicked:(id)sender {
-    SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"" bundle:nil];
-    [self presentViewController:sv animated:NO completion:nil];
+    SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
+    sv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:sv animated:YES completion:nil];
 }
 
 
