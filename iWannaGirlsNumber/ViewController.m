@@ -24,7 +24,7 @@
 #import "FUISegmentedControl.h"
 
 
-@interface ViewController ()
+@interface ViewController () <SettingViewControllerEnd>
 
 @end
 
@@ -79,8 +79,12 @@
 - (IBAction)settingClicked:(id)sender {
     SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
     sv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    sv.delegate = self;
     [self presentViewController:sv animated:YES completion:nil];
 }
 
+- (void)settingViewControllerDidEnd:(SettingViewController *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

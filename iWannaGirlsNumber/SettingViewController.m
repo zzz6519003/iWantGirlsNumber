@@ -9,7 +9,6 @@
 #import "SettingViewController.h"
 
 @interface SettingViewController ()
-
 @end
 
 @implementation SettingViewController
@@ -35,4 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)returnMain:(id)sender {
+    [self.delegate settingViewControllerDidEnd:self];
+}
 @end

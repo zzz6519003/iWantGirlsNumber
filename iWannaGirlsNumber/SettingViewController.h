@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SettingViewController;
+
+@protocol SettingViewControllerEnd <NSObject>
+
+- (void)settingViewControllerDidEnd:(SettingViewController *)sender;
+
+@end
 
 @interface SettingViewController : UIViewController
+
+@property (nonatomic, weak) id<SettingViewControllerEnd> delegate;
 
 @end
