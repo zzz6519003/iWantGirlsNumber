@@ -15,8 +15,10 @@
 
 @end
 
-@interface SettingViewController : UIViewController
+@interface SettingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) id<SettingViewControllerEnd> delegate;
+
+@property (weak, nonatomic) IBOutlet UITableView *settingTable;
 
 @end
