@@ -80,7 +80,9 @@
     SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
     sv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     sv.delegate = self;
-    [self presentViewController:sv animated:YES completion:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:sv];
+
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)settingViewControllerDidEnd:(SettingViewController *)sender {

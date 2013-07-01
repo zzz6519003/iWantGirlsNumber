@@ -26,6 +26,40 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    CGRect titleRect = CGRectMake(240, 240, 300, 40);
+    UILabel *tableTitle = [[UILabel alloc] initWithFrame:titleRect];
+    tableTitle.textColor = [UIColor blueColor];
+    tableTitle.backgroundColor = [self.settingTable backgroundColor];
+    tableTitle.opaque = YES;
+    tableTitle.font = [UIFont boldSystemFontOfSize:18];
+    tableTitle.text = @"shit";
+//    [tableTitle setCenter:CGPointMake(240, tablbeTitle.center.x / 2)];
+    self.settingTable.tableHeaderView = tableTitle;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+#pragma table view
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"backgroundCell"];
+//        UILabel *label = [[UILabel alloc] init];
+//        label.text = @"oops";
+//        [cell.contentView addSubview:label];
+        cell.textLabel.text = @"oops";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return cell;
+    } else {
+        return [[UITableViewCell alloc] init];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = [[UIViewController alloc]initWithNibName:@"BackGroundModeSelection" bundle:nil];
+    [[self navigationController] pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,5 +72,4 @@
     [self.delegate settingViewControllerDidEnd:self];
 }
 
-- table
 @end
