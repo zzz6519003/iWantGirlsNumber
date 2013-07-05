@@ -26,15 +26,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CGRect titleRect = CGRectMake(240, 240, 300, 40);
-    UILabel *tableTitle = [[UILabel alloc] initWithFrame:titleRect];
-    tableTitle.textColor = [UIColor blueColor];
-    tableTitle.backgroundColor = [self.settingTable backgroundColor];
-    tableTitle.opaque = YES;
-    tableTitle.font = [UIFont boldSystemFontOfSize:18];
-    tableTitle.text = @"shit";
+//    CGRect titleRect = CGRectMake(240, 240, 300, 40);
+//    UILabel *tableTitle = [[UILabel alloc] initWithFrame:titleRect];
+//    tableTitle.textColor = [UIColor blueColor];
+//    tableTitle.backgroundColor = [self.settingTable backgroundColor];
+//    tableTitle.opaque = YES;
+//    tableTitle.font = [UIFont boldSystemFontOfSize:18];
+//    tableTitle.text = @"shit";
 //    [tableTitle setCenter:CGPointMake(240, tablbeTitle.center.x / 2)];
-    self.settingTable.tableHeaderView = tableTitle;
+    self.title = @"设置";
+    self.settingTable.tableHeaderView = self.header1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -49,7 +50,7 @@
 //        UILabel *label = [[UILabel alloc] init];
 //        label.text = @"oops";
 //        [cell.contentView addSubview:label];
-        cell.textLabel.text = @"oops";
+        cell.textLabel.text = @"背景设置";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
     } else {

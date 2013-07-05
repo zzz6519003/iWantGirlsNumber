@@ -21,4 +21,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *settingTable;
 
+@property (strong, nonatomic) IBOutlet UIView *header1;
+
 @end
