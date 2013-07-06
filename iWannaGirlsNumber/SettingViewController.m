@@ -7,6 +7,7 @@
 //
 
 #import "SettingViewController.h"
+#import "BackGroundModeSelectionViewController.h"
 
 @interface SettingViewController ()
 @end
@@ -57,9 +58,9 @@
         return [[UITableViewCell alloc] init];
     }
 }
-
+@class BackGroundModeSelectionViewController;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [[UIViewController alloc]initWithNibName:@"BackGroundModeSelection" bundle:nil];
+    BackGroundModeSelectionViewController *vc = [[BackGroundModeSelectionViewController alloc]initWithNibName:@"BackGroundModeSelectionViewController" bundle:nil];
     [[self navigationController] pushViewController:vc animated:YES];
 }
 
