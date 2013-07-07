@@ -20,6 +20,7 @@
     if (self) {
         // Custom initialization
         NSLog(@"shit");
+        self.title = @"选择模式";
     }
     return self;
 }
@@ -34,6 +35,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)pureColorSelected:(id)sender {
+}
+
+- (IBAction)imagePickSelected:(id)sender {
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    [self presentViewController:ipc animated:YES completion:nil];
 }
 
 @end
