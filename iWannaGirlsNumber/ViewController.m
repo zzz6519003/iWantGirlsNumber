@@ -89,4 +89,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    if (self.backgroundImage != nil) {
+        
+    }
+}
+
 @end

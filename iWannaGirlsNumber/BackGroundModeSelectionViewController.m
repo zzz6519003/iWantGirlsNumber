@@ -7,6 +7,7 @@
 //
 
 #import "BackGroundModeSelectionViewController.h"
+#import "ViewController.h"
 
 @interface BackGroundModeSelectionViewController ()
 
@@ -42,7 +43,13 @@
 
 - (IBAction)imagePickSelected:(id)sender {
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    ipc.delegate = self;
     [self presentViewController:ipc animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [self.mainViewController setBackgroundImage:info[UIImagePickerControllerOriginalImage]];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

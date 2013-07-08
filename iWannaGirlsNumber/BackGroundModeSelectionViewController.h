@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BackGroundModeSelectionViewController : UIViewController
+@class ViewController;
+
+@interface BackGroundModeSelectionViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (weak, nonatomic) ViewController *mainViewController;
+
 
 @end

@@ -20,4 +20,6 @@
 @property (strong, nonatomic) UITapGestureRecognizer *tapAnywhere;
 
 @property (strong, nonatomic) UIColor *backgroundColor;
+@property (strong, nonatomic) UIImage *backgroundImage;
+
 @end
