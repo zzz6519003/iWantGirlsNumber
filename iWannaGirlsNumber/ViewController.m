@@ -24,6 +24,7 @@
 #import "FUISegmentedControl.h"
 
 
+
 @interface ViewController () <SettingViewControllerEnd>
 
 @end
@@ -32,6 +33,7 @@
 
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -49,6 +51,11 @@
     _tapAnywhere = [[UITapGestureRecognizer alloc]init];
     [self.tapAnywhere addTarget:self action:@selector(tapAnywhereAction)];
     [self.view addGestureRecognizer: self.tapAnywhere];
+    
+    // add a back button in the navigation bar
+//    [self.navigationItem setHidesBackButton:NO];
+    
+    
 }
 
 - (void)tapAnywhereAction {

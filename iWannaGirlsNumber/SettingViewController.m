@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.navigationItem
+//        self.navigationItem
     }
     return self;
 }
@@ -58,6 +58,7 @@
     } else {
         return [[UITableViewCell alloc] init];
     }
+    
 }
 @class BackGroundModeSelectionViewController;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

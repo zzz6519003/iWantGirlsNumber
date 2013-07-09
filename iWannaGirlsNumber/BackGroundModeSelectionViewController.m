@@ -8,6 +8,7 @@
 
 #import "BackGroundModeSelectionViewController.h"
 #import "ViewController.h"
+#import "PureColorChooseViewController.h"
 
 @interface BackGroundModeSelectionViewController ()
 
@@ -39,6 +40,9 @@
 }
 
 - (IBAction)pureColorSelected:(id)sender {
+    PureColorChooseViewController *pccv = [[PureColorChooseViewController alloc] initWithNibName:@"PureColorChooseViewController" bundle:nil];
+    [self.navigationController pushViewController:pccv animated:YES];
+
 }
 
 - (IBAction)imagePickSelected:(id)sender {
