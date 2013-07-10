@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181D8100178CF2090030897F /* ContentSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D80FE178CF2090030897F /* ContentSettingViewController.m */; };
+		181D8101178CF2090030897F /* ContentSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D80FF178CF2090030897F /* ContentSettingViewController.xib */; };
 		184CBB9E177BCCF000196603 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CBB9C177BCCF000196603 /* SettingViewController.m */; };
 		184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184CBB9D177BCCF000196603 /* SettingViewController.xib */; };
 		185C9BB1178BAE75007D3EF8 /* PureColorChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C9BAF178BAE75007D3EF8 /* PureColorChooseViewController.m */; };
@@ -53,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181D80FD178CF2090030897F /* ContentSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSettingViewController.h; sourceTree = "<group>"; };
+		181D80FE178CF2090030897F /* ContentSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSettingViewController.m; sourceTree = "<group>"; };
+		181D80FF178CF2090030897F /* ContentSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentSettingViewController.xib; sourceTree = "<group>"; };
 		184CBB9B177BCCF000196603 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		184CBB9C177BCCF000196603 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		184CBB9D177BCCF000196603 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -181,6 +186,9 @@
 				185C9BAE178BAE75007D3EF8 /* PureColorChooseViewController.h */,
 				185C9BAF178BAE75007D3EF8 /* PureColorChooseViewController.m */,
 				185C9BB0178BAE75007D3EF8 /* PureColorChooseViewController.xib */,
+				181D80FD178CF2090030897F /* ContentSettingViewController.h */,
+				181D80FE178CF2090030897F /* ContentSettingViewController.m */,
+				181D80FF178CF2090030897F /* ContentSettingViewController.xib */,
 				189E4FB5177937FF00302139 /* Supporting Files */,
 			);
 			path = iWannaGirlsNumber;
@@ -326,6 +334,7 @@
 				184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */,
 				18B8827E1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.xib in Resources */,
 				185C9BB2178BAE75007D3EF8 /* PureColorChooseViewController.xib in Resources */,
+				181D8101178CF2090030897F /* ContentSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +382,7 @@
 				184CBB9E177BCCF000196603 /* SettingViewController.m in Sources */,
 				18B8827D1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.m in Sources */,
 				185C9BB1178BAE75007D3EF8 /* PureColorChooseViewController.m in Sources */,
+				181D8100178CF2090030897F /* ContentSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

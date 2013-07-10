@@ -8,6 +8,7 @@
 
 #import "SettingViewController.h"
 #import "BackGroundModeSelectionViewController.h"
+#import "ContentSettingViewController.h"
 
 @interface SettingViewController ()
 @end
@@ -38,6 +39,13 @@
 //    [tableTitle setCenter:CGPointMake(240, tablbeTitle.center.x / 2)];
     self.title = @"设置";
     self.settingTable.tableHeaderView = self.header1;
+    
+    
+    // set a back button
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleBordered target:self action:@selector(returnMain:)];
+    [self.navigationItem setLeftBarButtonItem:btn animated:YES];
+
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -55,15 +63,29 @@
         cell.textLabel.text = @"背景设置";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
-    } else {
-        return [[UITableViewCell alloc] init];
+    } else if (indexPath.row == 2) {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"shitCell"];
+        cell.textLabel.text = @"いばせあに";
+        return cell;
+    } else if (indexPath.row == 1) {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"contentCell"];
+        cell.textLabel.text = @"内容设置";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return cell;
+    }
+    return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        BackGroundModeSelectionViewController *vc = [[BackGroundModeSelectionViewController alloc] initWithNibName:@"BackGroundModeSelectionViewController" bundle:nil];
+        [[self navigationController] pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 1){
+        ContentSettingViewController *csv = [[ContentSettingViewController alloc]initWithNibName:@"ContentSettingViewController" bundle:nil];
+        [[self navigationController] pushViewController:csv animated:YES];
     }
     
-}
-@class BackGroundModeSelectionViewController;
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    BackGroundModeSelectionViewController *vc = [[BackGroundModeSelectionViewController alloc]initWithNibName:@"BackGroundModeSelectionViewController" bundle:nil];
-    [[self navigationController] pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,6 +97,5 @@
 - (IBAction)returnMain:(id)sender {
     [self.delegate settingViewControllerDidEnd:self];
 }
-
 
 @end
