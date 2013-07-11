@@ -13,6 +13,11 @@
 		184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184CBB9D177BCCF000196603 /* SettingViewController.xib */; };
 		185C9BB1178BAE75007D3EF8 /* PureColorChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C9BAF178BAE75007D3EF8 /* PureColorChooseViewController.m */; };
 		185C9BB2178BAE75007D3EF8 /* PureColorChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185C9BB0178BAE75007D3EF8 /* PureColorChooseViewController.xib */; };
+		1868E632178E4B66004AAADC /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1868E631178E4B66004AAADC /* TODO */; };
+		1868E634178E63EA004AAADC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1868E633178E63EA004AAADC /* QuartzCore.framework */; };
+		1868E63C178E643C004AAADC /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868E637178E643C004AAADC /* MYIntroductionPanel.m */; };
+		1868E63D178E643C004AAADC /* MYIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868E639178E643C004AAADC /* MYIntroductionView.m */; };
+		1868E63E178E643C004AAADC /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868E63B178E643C004AAADC /* MYViewController.m */; };
 		189E4FAF177937FF00302139 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FAE177937FF00302139 /* UIKit.framework */; };
 		189E4FB1177937FF00302139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FB0177937FF00302139 /* Foundation.framework */; };
 		189E4FB3177937FF00302139 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E4FB2177937FF00302139 /* CoreGraphics.framework */; };
@@ -64,6 +69,14 @@
 		185C9BAE178BAE75007D3EF8 /* PureColorChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureColorChooseViewController.h; sourceTree = "<group>"; };
 		185C9BAF178BAE75007D3EF8 /* PureColorChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureColorChooseViewController.m; sourceTree = "<group>"; };
 		185C9BB0178BAE75007D3EF8 /* PureColorChooseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PureColorChooseViewController.xib; sourceTree = "<group>"; };
+		1868E631178E4B66004AAADC /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TODO; path = iWannaGirlsNumber/TODO; sourceTree = "<group>"; };
+		1868E633178E63EA004AAADC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1868E636178E643C004AAADC /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		1868E637178E643C004AAADC /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
+		1868E638178E643C004AAADC /* MYIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionView.h; sourceTree = "<group>"; };
+		1868E639178E643C004AAADC /* MYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionView.m; sourceTree = "<group>"; };
+		1868E63A178E643C004AAADC /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
+		1868E63B178E643C004AAADC /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
 		189E4FAB177937FF00302139 /* iWannaGirlsNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWannaGirlsNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E4FAE177937FF00302139 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		189E4FB0177937FF00302139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1868E634178E63EA004AAADC /* QuartzCore.framework in Frameworks */,
 				189E501C177938B000302139 /* CoreText.framework in Frameworks */,
 				189E4FAF177937FF00302139 /* UIKit.framework in Frameworks */,
 				189E4FB1177937FF00302139 /* Foundation.framework in Frameworks */,
@@ -141,9 +155,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1868E635178E6431004AAADC /* MY */ = {
+			isa = PBXGroup;
+			children = (
+				1868E636178E643C004AAADC /* MYIntroductionPanel.h */,
+				1868E637178E643C004AAADC /* MYIntroductionPanel.m */,
+				1868E638178E643C004AAADC /* MYIntroductionView.h */,
+				1868E639178E643C004AAADC /* MYIntroductionView.m */,
+				1868E63A178E643C004AAADC /* MYViewController.h */,
+				1868E63B178E643C004AAADC /* MYViewController.m */,
+			);
+			name = MY;
+			sourceTree = "<group>";
+		};
 		189E4FA2177937FF00302139 = {
 			isa = PBXGroup;
 			children = (
+				1868E633178E63EA004AAADC /* QuartzCore.framework */,
+				1868E631178E4B66004AAADC /* TODO */,
 				189E501B177938B000302139 /* CoreText.framework */,
 				189E4FB4177937FF00302139 /* iWannaGirlsNumber */,
 				189E4FAD177937FF00302139 /* Frameworks */,
@@ -173,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				189E4FBD177937FF00302139 /* AppDelegate.h */,
+				1868E635178E6431004AAADC /* MY */,
 				189E4FBE177937FF00302139 /* AppDelegate.m */,
 				189E4FD51779385D00302139 /* ViewController.h */,
 				189E4FD61779385D00302139 /* ViewController.m */,
@@ -335,6 +365,7 @@
 				18B8827E1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.xib in Resources */,
 				185C9BB2178BAE75007D3EF8 /* PureColorChooseViewController.xib in Resources */,
 				181D8101178CF2090030897F /* ContentSettingViewController.xib in Resources */,
+				1868E632178E4B66004AAADC /* TODO in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +414,9 @@
 				18B8827D1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.m in Sources */,
 				185C9BB1178BAE75007D3EF8 /* PureColorChooseViewController.m in Sources */,
 				181D8100178CF2090030897F /* ContentSettingViewController.m in Sources */,
+				1868E63C178E643C004AAADC /* MYIntroductionPanel.m in Sources */,
+				1868E63D178E643C004AAADC /* MYIntroductionView.m in Sources */,
+				1868E63E178E643C004AAADC /* MYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
