@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MYIntroductionView.h"
 @class FUIButton;
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController <MYIntroductionDelegate>
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labels;
 @property (weak, nonatomic) IBOutlet FUIButton *okButton;
