@@ -55,6 +55,10 @@
 		189E50191779389500302139 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189E500F1779389500302139 /* Lato-LightItalic.ttf */; };
 		189E501A1779389500302139 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189E50101779389500302139 /* Lato-Regular.ttf */; };
 		189E501C177938B000302139 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E501B177938B000302139 /* CoreText.framework */; };
+		18AD11DE1790FD2000AF04DC /* SampleImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AD11DA1790FD2000AF04DC /* SampleImage1.png */; };
+		18AD11DF1790FD2000AF04DC /* SampleImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AD11DB1790FD2000AF04DC /* SampleImage2.png */; };
+		18AD11E01790FD2000AF04DC /* SampleHeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AD11DC1790FD2000AF04DC /* SampleHeaderImage.png */; };
+		18AD11E11790FD2000AF04DC /* SampleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AD11DD1790FD2000AF04DC /* SampleBackground.png */; };
 		18B8827D1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8827B1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.m */; };
 		18B8827E1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8827C1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.xib */; };
 /* End PBXBuildFile section */
@@ -134,6 +138,10 @@
 		189E500F1779389500302139 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		189E50101779389500302139 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		189E501B177938B000302139 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		18AD11DA1790FD2000AF04DC /* SampleImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleImage1.png; sourceTree = "<group>"; };
+		18AD11DB1790FD2000AF04DC /* SampleImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleImage2.png; sourceTree = "<group>"; };
+		18AD11DC1790FD2000AF04DC /* SampleHeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleHeaderImage.png; sourceTree = "<group>"; };
+		18AD11DD1790FD2000AF04DC /* SampleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleBackground.png; sourceTree = "<group>"; };
 		18B8827A1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackGroundModeSelectionViewController.h; sourceTree = "<group>"; };
 		18B8827B1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackGroundModeSelectionViewController.m; sourceTree = "<group>"; };
 		18B8827C1787A44E00C5A5A2 /* BackGroundModeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackGroundModeSelectionViewController.xib; sourceTree = "<group>"; };
@@ -227,6 +235,10 @@
 		189E4FB5177937FF00302139 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18AD11DA1790FD2000AF04DC /* SampleImage1.png */,
+				18AD11DB1790FD2000AF04DC /* SampleImage2.png */,
+				18AD11DC1790FD2000AF04DC /* SampleHeaderImage.png */,
+				18AD11DD1790FD2000AF04DC /* SampleBackground.png */,
 				189E4FD81779387C00302139 /* flat */,
 				189E4FB6177937FF00302139 /* iWannaGirlsNumber-Info.plist */,
 				189E4FB7177937FF00302139 /* InfoPlist.strings */,
@@ -366,6 +378,10 @@
 				185C9BB2178BAE75007D3EF8 /* PureColorChooseViewController.xib in Resources */,
 				181D8101178CF2090030897F /* ContentSettingViewController.xib in Resources */,
 				1868E632178E4B66004AAADC /* TODO in Resources */,
+				18AD11DE1790FD2000AF04DC /* SampleImage1.png in Resources */,
+				18AD11DF1790FD2000AF04DC /* SampleImage2.png in Resources */,
+				18AD11E01790FD2000AF04DC /* SampleHeaderImage.png in Resources */,
+				18AD11E11790FD2000AF04DC /* SampleBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

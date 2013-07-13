@@ -81,6 +81,7 @@
     }
     else if (finishType == MYFinishTypeSwipeOut){
         NSLog(@"Did Finish Introduction By Swiping Out");
+        // store the fact that we read it over
     }
     
     //One might consider making the introductionview a class variable and releasing it here.

@@ -63,7 +63,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     //STEP 1 Construct Panels
-    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Welcome to MYIntroductionView, your 100 percent customizable interface for introductions and tutorials! Simply add a few classes to your project, and you are ready to go!"];
+    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"欢迎来到 我要美女号码  。看到让你心动的女神后请毫不犹豫得打开本应用上前把手机递给女神。"];
     
     //You may also add in a title for each panel
     MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Your Ticket!" description:@"MYIntroductionView is your ticket to a great tutorial or introduction!"];
