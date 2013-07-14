@@ -26,6 +26,7 @@
 #import "MYViewController.h"
 
 
+
 @interface MYViewController ()
 
 @end
@@ -82,6 +83,9 @@
     else if (finishType == MYFinishTypeSwipeOut){
         NSLog(@"Did Finish Introduction By Swiping Out");
         // store the fact that we read it over
+        NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
+        [ud setBool:YES forKey:TUTORIAL_KEY];
+        [ud synchronize];
     }
     
     //One might consider making the introductionview a class variable and releasing it here.

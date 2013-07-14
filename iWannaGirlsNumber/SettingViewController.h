@@ -23,4 +23,9 @@
 
 @property (strong, nonatomic) IBOutlet UIView *header1;
 
+@property (strong, nonatomic) IBOutlet UIView *tutCell;
+
+@property (strong, nonatomic) IBOutlet UITableViewCell *tutTableCell;
+
+
 @end

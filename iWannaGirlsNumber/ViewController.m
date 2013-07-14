@@ -25,6 +25,7 @@
 
 #import "MYIntroductionPanel.h"
 #import "MYIntroductionView.h"
+#import "MYViewController.h"
 
 
 
@@ -36,6 +37,8 @@
 
 - (void)viewDidLoad
 {
+
+    [NSUserDefaults resetStandardUserDefaults];
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -62,11 +65,20 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    
+    // get the user default
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    BOOL weatherTheUserHaveReadTheCrap = [ud boolForKey:TUTORIAL_KEY];
+    
+    if (weatherTheUserHaveReadTheCrap) {
+        return;
+    }
+    
     //STEP 1 Construct Panels
     MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"欢迎来到 我要美女号码  。看到让你心动的女神后请毫不犹豫得打开本应用上前把手机递给女神。"];
     
     //You may also add in a title for each panel
-    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Your Ticket!" description:@"MYIntroductionView is your ticket to a great tutorial or introduction!"];
+    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Your Ticket!" description:@"有时候我们需要的不过是10秒中的勇气  inspired by <我家买了动物园>"];
     
     //STEP 2 Create IntroductionView
     
@@ -133,5 +145,29 @@
         
     }
 }
+
+
+#pragma mark - MYIntroduction Delegate Methods
+
+-(void)introductionDidFinishWithType:(MYFinishType)finishType{
+    if (finishType == MYFinishTypeSkipButton) {
+        NSLog(@"Did Finish Introduction By Skipping It");
+    }
+    else if (finishType == MYFinishTypeSwipeOut){
+        NSLog(@"Did Finish Introduction By Swiping Out");
+        // store the fact that we read it over
+        NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
+        [ud setBool:YES forKey:TUTORIAL_KEY];
+        [ud synchronize];
+    }
+    
+    //One might consider making the introductionview a class variable and releasing it here.
+    // I didn't do this to keep things simple for the sake of example.
+}
+
+-(void)introductionDidChangeToPanel:(MYIntroductionPanel *)panel withIndex:(NSInteger)panelIndex{
+    NSLog(@"%@ \nPanelIndex: %d", panel.Description, panelIndex);
+}
+
 
 @end

@@ -25,6 +25,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MYIntroductionView.h"
+#define TUTORIAL_KEY @"tutorial_read"
+
 
 @interface MYViewController : UIViewController <MYIntroductionDelegate>
 

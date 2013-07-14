@@ -49,30 +49,44 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    if (section == 0) {
+        return 3;
+    }
+    if (section == 1) {
+        return 1;
+    }
+    return 1;
 }
 
 #pragma table view
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"backgroundCell"];
+    //        UILabel *label = [[UILabel alloc] init];
+    //        label.text = @"oops";
+    //        [cell.contentView addSubview:label];
+            cell.textLabel.text = @"背景设置";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            return cell;
+        } else if (indexPath.row == 2) {
+            UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"shitCell"];
+            cell.textLabel.text = @"いばせあに";
+            return cell;
+        } else if (indexPath.row == 1) {
+            UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"contentCell"];
+            cell.textLabel.text = @"内容设置";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            return cell;
+        }
+    } 
     if (indexPath.row == 0) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"backgroundCell"];
-//        UILabel *label = [[UILabel alloc] init];
-//        label.text = @"oops";
-//        [cell.contentView addSubview:label];
-        cell.textLabel.text = @"背景设置";
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        return cell;
-    } else if (indexPath.row == 2) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"shitCell"];
-        cell.textLabel.text = @"いばせあに";
-        return cell;
-    } else if (indexPath.row == 1) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"contentCell"];
-        cell.textLabel.text = @"内容设置";
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        return cell;
+
+        return self.tutTableCell;
     }
+
+//    return cell;
     return nil;
 }
 
@@ -88,6 +102,10 @@
     
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -98,4 +116,9 @@
     [self.delegate settingViewControllerDidEnd:self];
 }
 
+- (void)viewDidUnload {
+    [self setTutCell:nil];
+    [self setTutTableCell:nil];
+    [super viewDidUnload];
+}
 @end
