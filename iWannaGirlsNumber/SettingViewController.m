@@ -116,6 +116,11 @@
     [self.delegate settingViewControllerDidEnd:self];
 }
 
+- (IBAction)tutValueChanged:(id)sender {
+    NSLog(@"tutChanged");
+}
+
+
 - (void)viewDidUnload {
     [self setTutCell:nil];
     [self setTutTableCell:nil];
