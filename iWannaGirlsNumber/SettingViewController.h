@@ -27,5 +27,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *tutTableCell;
 
+@property (weak, nonatomic) IBOutlet UISwitch *tutSwitchSegment;
 
 @end

@@ -70,9 +70,12 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     BOOL weatherTheUserHaveReadTheCrap = [ud boolForKey:TUTORIAL_KEY];
     
-    if (weatherTheUserHaveReadTheCrap) {
+    if (!weatherTheUserHaveReadTheCrap) {
         return;
     }
+    
+    [ud setBool:!weatherTheUserHaveReadTheCrap forKey:TUTORIAL_KEY];
+    [ud synchronize];
     
     //STEP 1 Construct Panels
     MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"欢迎来到 我要美女号码  。看到让你心动的女神后请毫不犹豫得打开本应用上前把手机递给女神。"];
@@ -125,6 +128,7 @@
     alertView.defaultButtonFont = [UIFont boldFlatFontOfSize:16];
     alertView.defaultButtonTitleColor = [UIColor asbestosColor];
     [alertView show];
+    
 }
 
 - (IBAction)settingClicked:(id)sender {
@@ -163,6 +167,7 @@
     
     //One might consider making the introductionview a class variable and releasing it here.
     // I didn't do this to keep things simple for the sake of example.
+    
 }
 
 -(void)introductionDidChangeToPanel:(MYIntroductionPanel *)panel withIndex:(NSInteger)panelIndex{
