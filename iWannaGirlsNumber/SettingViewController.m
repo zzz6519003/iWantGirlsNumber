@@ -97,6 +97,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.settingTable deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             BackGroundModeSelectionViewController *vc = [[BackGroundModeSelectionViewController alloc] initWithNibName:@"BackGroundModeSelectionViewController" bundle:nil];
@@ -133,7 +134,7 @@
 //}
 
 - (void)tutValueChanged {
-    NSLog(@"tutChanged");
+//    NSLog(@"tutChanged");
     NSUserDefaults *df = [NSUserDefaults standardUserDefaults];
     [df setBool:YES forKey:TUTORIAL_KEY];
     

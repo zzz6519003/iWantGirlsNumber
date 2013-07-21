@@ -209,6 +209,7 @@
 		189E4FB4177937FF00302139 /* iWannaGirlsNumber */ = {
 			isa = PBXGroup;
 			children = (
+				189E4FD81779387C00302139 /* flat */,
 				1868E635178E6431004AAADC /* MY */,
 				189E4FBD177937FF00302139 /* AppDelegate.h */,
 				189E4FBE177937FF00302139 /* AppDelegate.m */,
@@ -239,7 +240,6 @@
 				18AD11DB1790FD2000AF04DC /* SampleImage2.png */,
 				18AD11DC1790FD2000AF04DC /* SampleHeaderImage.png */,
 				18AD11DD1790FD2000AF04DC /* SampleBackground.png */,
-				189E4FD81779387C00302139 /* flat */,
 				189E4FB6177937FF00302139 /* iWannaGirlsNumber-Info.plist */,
 				189E4FB7177937FF00302139 /* InfoPlist.strings */,
 				189E4FBA177937FF00302139 /* main.m */,
