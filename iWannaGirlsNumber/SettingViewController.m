@@ -56,7 +56,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 2;
     }
     if (section == 1) {
         return 1;
@@ -77,9 +77,7 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             return cell;
         } else if (indexPath.row == 2) {
-            UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"shitCell"];
-            cell.textLabel.text = @"いばせあに";
-            return cell;
+            
         } else if (indexPath.row == 1) {
             UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"contentCell"];
             cell.textLabel.text = @"内容设置";
