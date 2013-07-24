@@ -10,4 +10,6 @@
 
 @interface ContentSettingViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UITableViewCell *nameCell;
+
 @end
