@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *nameCell;
 
+@property (strong, nonatomic) IBOutlet UITableViewCell *heightCell;
+
+
 @end

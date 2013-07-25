@@ -53,7 +53,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,6 +69,9 @@
 //    return cell;
     if (indexPath.row == 0) {
         return self.nameCell;
+    }
+    if (indexPath.row == 1) {
+        return self.heightCell;
     }
     return nil;
 }
@@ -127,15 +130,14 @@
 }
 
 - (IBAction)nameValueChanged:(id)sender {
-    NSLog(@"ss");
     UISwitch *nameSwitch = (UISwitch *)sender;
     [[NSUserDefaults standardUserDefaults] setBool:nameSwitch.on forKey:@"AskName"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-
 }
 
 - (void)viewDidUnload {
     [self setNameCell:nil];
+    [self setHeightCell:nil];
     [super viewDidUnload];
 }
 @end
