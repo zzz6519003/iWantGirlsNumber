@@ -24,4 +24,5 @@
 @property (strong, nonatomic) UIColor *backgroundColor;
 @property (strong, nonatomic) UIImage *backgroundImage;
 
+@property (weak, nonatomic) IBOutlet UILabel *tt;
 @end

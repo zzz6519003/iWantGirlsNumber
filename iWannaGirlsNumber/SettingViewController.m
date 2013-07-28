@@ -9,8 +9,9 @@
 #import "SettingViewController.h"
 #import "BackGroundModeSelectionViewController.h"
 #import "ContentSettingViewController.h"
+#import "MYViewController.h"
 
-#define TUTORIAL_KEY @"tutorial_read"
+//#define TUTORIAL_KEY @"tutorial_read"
 
 @interface SettingViewController ()
 @end
@@ -48,7 +49,7 @@
     [self.navigationItem setLeftBarButtonItem:btn animated:YES];
     
     
-    [self.tutSwitchSegment addTarget:self action:@selector(tutValueChanged) forControlEvents:UIControlEventValueChanged];
+    [self.tutSwitchSegment addTarget:self action:@selector(tutValueChanged:) forControlEvents:UIControlEventValueChanged];
     
     
     
@@ -131,12 +132,12 @@
 //    NSLog(df.description);
 //}
 
-- (void)tutValueChanged {
+- (void)tutValueChanged: (id)sender {
+    UISwitch *tut = (UISwitch *)sender;
 //    NSLog(@"tutChanged");
     NSUserDefaults *df = [NSUserDefaults standardUserDefaults];
-    [df setBool:YES forKey:TUTORIAL_KEY];
-    
-    NSLog(@"sa");
+    [df setBool:tut.on forKey:TUTORIAL_KEY];
+    [df synchronize];
     NSLog([df.dictionaryRepresentation description]);
 }
 
