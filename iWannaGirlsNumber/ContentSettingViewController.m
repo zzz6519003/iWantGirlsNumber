@@ -134,10 +134,15 @@
     [[NSUserDefaults standardUserDefaults] setBool:nameSwitch.on forKey:@"AskName"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+- (IBAction)breastChanged:(id)sender {
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"哥们你脑袋没事吧" message:@"天堂向左，你偏要向右？" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
 
 - (void)viewDidUnload {
     [self setNameCell:nil];
     [self setHeightCell:nil];
+    [self setBreastBig:nil];
     [super viewDidUnload];
 }
 @end

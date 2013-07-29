@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *heightCell;
 
+@property (strong, nonatomic) IBOutlet UITableViewCell *breastBig;
 
 @end
