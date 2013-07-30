@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		181D8100178CF2090030897F /* ContentSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D80FE178CF2090030897F /* ContentSettingViewController.m */; };
 		181D8101178CF2090030897F /* ContentSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D80FF178CF2090030897F /* ContentSettingViewController.xib */; };
+		1833CCFD17A880D3002DA572 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1833CCFC17A880D3002DA572 /* AudioToolbox.framework */; };
+		1833CD0A17A882FD002DA572 /* Pull Down (Light).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CCFF17A882FD002DA572 /* Pull Down (Light).wav */; };
+		1833CD0B17A882FD002DA572 /* Pull Down (Swoosh 1).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0017A882FD002DA572 /* Pull Down (Swoosh 1).wav */; };
+		1833CD0C17A882FD002DA572 /* Pull Down (Swoosh 2 Reverse).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0117A882FD002DA572 /* Pull Down (Swoosh 2 Reverse).wav */; };
+		1833CD0D17A882FD002DA572 /* Pull Down (Swoosh 2).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0217A882FD002DA572 /* Pull Down (Swoosh 2).wav */; };
+		1833CD0E17A882FD002DA572 /* Pull Down (Weighted).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0317A882FD002DA572 /* Pull Down (Weighted).wav */; };
+		1833CD0F17A882FD002DA572 /* Click Pop (Medium 1).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0417A882FD002DA572 /* Click Pop (Medium 1).wav */; };
+		1833CD1017A882FD002DA572 /* Click Pop (Medium 2).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0517A882FD002DA572 /* Click Pop (Medium 2).wav */; };
+		1833CD1117A882FD002DA572 /* Click Pop (Medium 3).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0617A882FD002DA572 /* Click Pop (Medium 3).wav */; };
+		1833CD1217A882FD002DA572 /* Click Pop (Subtle 1).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0717A882FD002DA572 /* Click Pop (Subtle 1).wav */; };
+		1833CD1317A882FD002DA572 /* Click Pop (Subtle 2).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0817A882FD002DA572 /* Click Pop (Subtle 2).wav */; };
+		1833CD1417A882FD002DA572 /* Click Pop (Weighted).wav in Resources */ = {isa = PBXBuildFile; fileRef = 1833CD0917A882FD002DA572 /* Click Pop (Weighted).wav */; };
+		1833CD1717A8830F002DA572 /* NSObject+Sounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 1833CD1617A8830F002DA572 /* NSObject+Sounds.m */; };
 		184CBB9E177BCCF000196603 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CBB9C177BCCF000196603 /* SettingViewController.m */; };
 		184CBB9F177BCCF000196603 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184CBB9D177BCCF000196603 /* SettingViewController.xib */; };
 		185C9BB1178BAE75007D3EF8 /* PureColorChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C9BAF178BAE75007D3EF8 /* PureColorChooseViewController.m */; };
@@ -67,6 +80,20 @@
 		181D80FD178CF2090030897F /* ContentSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSettingViewController.h; sourceTree = "<group>"; };
 		181D80FE178CF2090030897F /* ContentSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSettingViewController.m; sourceTree = "<group>"; };
 		181D80FF178CF2090030897F /* ContentSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentSettingViewController.xib; sourceTree = "<group>"; };
+		1833CCFC17A880D3002DA572 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1833CCFF17A882FD002DA572 /* Pull Down (Light).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pull Down (Light).wav"; sourceTree = "<group>"; };
+		1833CD0017A882FD002DA572 /* Pull Down (Swoosh 1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pull Down (Swoosh 1).wav"; sourceTree = "<group>"; };
+		1833CD0117A882FD002DA572 /* Pull Down (Swoosh 2 Reverse).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pull Down (Swoosh 2 Reverse).wav"; sourceTree = "<group>"; };
+		1833CD0217A882FD002DA572 /* Pull Down (Swoosh 2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pull Down (Swoosh 2).wav"; sourceTree = "<group>"; };
+		1833CD0317A882FD002DA572 /* Pull Down (Weighted).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pull Down (Weighted).wav"; sourceTree = "<group>"; };
+		1833CD0417A882FD002DA572 /* Click Pop (Medium 1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Medium 1).wav"; sourceTree = "<group>"; };
+		1833CD0517A882FD002DA572 /* Click Pop (Medium 2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Medium 2).wav"; sourceTree = "<group>"; };
+		1833CD0617A882FD002DA572 /* Click Pop (Medium 3).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Medium 3).wav"; sourceTree = "<group>"; };
+		1833CD0717A882FD002DA572 /* Click Pop (Subtle 1).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Subtle 1).wav"; sourceTree = "<group>"; };
+		1833CD0817A882FD002DA572 /* Click Pop (Subtle 2).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Subtle 2).wav"; sourceTree = "<group>"; };
+		1833CD0917A882FD002DA572 /* Click Pop (Weighted).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Click Pop (Weighted).wav"; sourceTree = "<group>"; };
+		1833CD1517A8830F002DA572 /* NSObject+Sounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sounds.h"; sourceTree = "<group>"; };
+		1833CD1617A8830F002DA572 /* NSObject+Sounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sounds.m"; sourceTree = "<group>"; };
 		184CBB9B177BCCF000196603 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		184CBB9C177BCCF000196603 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		184CBB9D177BCCF000196603 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -157,12 +184,31 @@
 				189E4FAF177937FF00302139 /* UIKit.framework in Frameworks */,
 				189E4FB1177937FF00302139 /* Foundation.framework in Frameworks */,
 				189E4FB3177937FF00302139 /* CoreGraphics.framework in Frameworks */,
+				1833CCFD17A880D3002DA572 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1833CCFE17A882E6002DA572 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				1833CCFF17A882FD002DA572 /* Pull Down (Light).wav */,
+				1833CD0017A882FD002DA572 /* Pull Down (Swoosh 1).wav */,
+				1833CD0117A882FD002DA572 /* Pull Down (Swoosh 2 Reverse).wav */,
+				1833CD0217A882FD002DA572 /* Pull Down (Swoosh 2).wav */,
+				1833CD0317A882FD002DA572 /* Pull Down (Weighted).wav */,
+				1833CD0417A882FD002DA572 /* Click Pop (Medium 1).wav */,
+				1833CD0517A882FD002DA572 /* Click Pop (Medium 2).wav */,
+				1833CD0617A882FD002DA572 /* Click Pop (Medium 3).wav */,
+				1833CD0717A882FD002DA572 /* Click Pop (Subtle 1).wav */,
+				1833CD0817A882FD002DA572 /* Click Pop (Subtle 2).wav */,
+				1833CD0917A882FD002DA572 /* Click Pop (Weighted).wav */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
 		1868E635178E6431004AAADC /* MY */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +225,7 @@
 		189E4FA2177937FF00302139 = {
 			isa = PBXGroup;
 			children = (
+				1833CCFC17A880D3002DA572 /* AudioToolbox.framework */,
 				1868E633178E63EA004AAADC /* QuartzCore.framework */,
 				1868E631178E4B66004AAADC /* TODO */,
 				189E501B177938B000302139 /* CoreText.framework */,
@@ -228,6 +275,8 @@
 				181D80FD178CF2090030897F /* ContentSettingViewController.h */,
 				181D80FE178CF2090030897F /* ContentSettingViewController.m */,
 				181D80FF178CF2090030897F /* ContentSettingViewController.xib */,
+				1833CD1517A8830F002DA572 /* NSObject+Sounds.h */,
+				1833CD1617A8830F002DA572 /* NSObject+Sounds.m */,
 				189E4FB5177937FF00302139 /* Supporting Files */,
 			);
 			path = iWannaGirlsNumber;
@@ -236,6 +285,7 @@
 		189E4FB5177937FF00302139 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1833CCFE17A882E6002DA572 /* sound */,
 				18AD11DA1790FD2000AF04DC /* SampleImage1.png */,
 				18AD11DB1790FD2000AF04DC /* SampleImage2.png */,
 				18AD11DC1790FD2000AF04DC /* SampleHeaderImage.png */,
@@ -382,6 +432,17 @@
 				18AD11DF1790FD2000AF04DC /* SampleImage2.png in Resources */,
 				18AD11E01790FD2000AF04DC /* SampleHeaderImage.png in Resources */,
 				18AD11E11790FD2000AF04DC /* SampleBackground.png in Resources */,
+				1833CD0A17A882FD002DA572 /* Pull Down (Light).wav in Resources */,
+				1833CD0B17A882FD002DA572 /* Pull Down (Swoosh 1).wav in Resources */,
+				1833CD0C17A882FD002DA572 /* Pull Down (Swoosh 2 Reverse).wav in Resources */,
+				1833CD0D17A882FD002DA572 /* Pull Down (Swoosh 2).wav in Resources */,
+				1833CD0E17A882FD002DA572 /* Pull Down (Weighted).wav in Resources */,
+				1833CD0F17A882FD002DA572 /* Click Pop (Medium 1).wav in Resources */,
+				1833CD1017A882FD002DA572 /* Click Pop (Medium 2).wav in Resources */,
+				1833CD1117A882FD002DA572 /* Click Pop (Medium 3).wav in Resources */,
+				1833CD1217A882FD002DA572 /* Click Pop (Subtle 1).wav in Resources */,
+				1833CD1317A882FD002DA572 /* Click Pop (Subtle 2).wav in Resources */,
+				1833CD1417A882FD002DA572 /* Click Pop (Weighted).wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +494,7 @@
 				1868E63C178E643C004AAADC /* MYIntroductionPanel.m in Sources */,
 				1868E63D178E643C004AAADC /* MYIntroductionView.m in Sources */,
 				1868E63E178E643C004AAADC /* MYViewController.m in Sources */,
+				1833CD1717A8830F002DA572 /* NSObject+Sounds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +573,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iWannaGirlsNumber/iWannaGirlsNumber-Prefix.pch";
 				INFOPLIST_FILE = "iWannaGirlsNumber/iWannaGirlsNumber-Info.plist";
@@ -525,6 +591,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iWannaGirlsNumber/iWannaGirlsNumber-Prefix.pch";
 				INFOPLIST_FILE = "iWannaGirlsNumber/iWannaGirlsNumber-Info.plist";
