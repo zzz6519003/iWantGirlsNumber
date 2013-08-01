@@ -46,7 +46,7 @@
 								<string key="NSFrame">{{20, 77}, {321, 57}}</string>
 								<reference key="NSSuperview" ref="402448812"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="543000288"/>
+								<reference key="NSNextKeyView" ref="230307172"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">1</int>
@@ -62,11 +62,11 @@
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<object class="NSColor" key="IBUINormalTitleShadowColor" id="102956157">
+								<object class="NSColor" key="IBUINormalTitleShadowColor" id="123865953">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MC41AA</bytes>
 								</object>
-								<object class="IBUIFontDescription" key="IBUIFontDescription" id="909239314">
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="1047927040">
 									<string key="name">Helvetica-Bold</string>
 									<string key="family">Helvetica</string>
 									<int key="traits">2</int>
@@ -78,7 +78,7 @@
 									<int key="NSfFlags">16</int>
 								</object>
 							</object>
-							<object class="IBUIButton" id="543000288">
+							<object class="IBUIButton" id="230307172">
 								<reference key="NSNextResponder" ref="402448812"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{20, 134}, {321, 57}}</string>
@@ -99,8 +99,8 @@
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
-								<reference key="IBUINormalTitleShadowColor" ref="102956157"/>
-								<reference key="IBUIFontDescription" ref="909239314"/>
+								<reference key="IBUINormalTitleShadowColor" ref="123865953"/>
+								<reference key="IBUIFontDescription" ref="1047927040"/>
 								<reference key="IBUIFont" ref="1022524788"/>
 							</object>
 							<object class="IBUIButton" id="784691040">
@@ -208,17 +208,8 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">imagePickSelected:</string>
-						<reference key="source" ref="543000288"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">80</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">placeAPicture:</string>
-						<reference key="source" ref="543000288"/>
+						<reference key="source" ref="230307172"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -258,7 +249,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="784691040"/>
 							<reference ref="219408826"/>
-							<reference ref="543000288"/>
+							<reference ref="230307172"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -274,7 +265,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">79</int>
-						<reference key="object" ref="543000288"/>
+						<reference key="object" ref="230307172"/>
 						<reference key="parent" ref="402448812"/>
 					</object>
 				</array>

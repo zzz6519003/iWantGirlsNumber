@@ -139,10 +139,19 @@
     [alertView show];
 }
 
+- (IBAction)haveBfChanged:(id)sender {
+    UISwitch *haveBF = (UISwitch *)sender;
+
+    [[NSUserDefaults standardUserDefaults] setBool:haveBF.on forKey:@"HaveBF"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
 - (void)viewDidUnload {
     [self setNameCell:nil];
     [self setHeightCell:nil];
     [self setBreastBig:nil];
+    [self setHaveBf:nil];
     [super viewDidUnload];
 }
 @end

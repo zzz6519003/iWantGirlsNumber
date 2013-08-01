@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MYIntroductionView.h"
+@class FUISegmentedControl;
 @class FUIButton;
 
 
@@ -27,4 +28,6 @@
 @property (strong, nonatomic) UIImage *backgroundImage;
 
 @property (weak, nonatomic) IBOutlet UILabel *tt;
+
+@property (weak, nonatomic) IBOutlet FUISegmentedControl *haveBF;
 @end

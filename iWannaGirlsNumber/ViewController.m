@@ -58,6 +58,15 @@
     [self.tapAnywhere addTarget:self action:@selector(tapAnywhereAction)];
     [self.view addGestureRecognizer: self.tapAnywhere];
     
+    self.haveBF.selectedFont = [UIFont boldFlatFontOfSize:16];
+    self.haveBF.selectedFontColor = [UIColor cloudsColor];
+    self.haveBF.deselectedFont = [UIFont flatFontOfSize:16];
+    self.haveBF.deselectedFontColor = [UIColor cloudsColor];
+    self.haveBF.selectedColor = [UIColor amethystColor];
+    self.haveBF.deselectedColor = [UIColor silverColor];
+    self.haveBF.dividerColor = [UIColor midnightBlueColor];
+    self.haveBF.cornerRadius = 5.0;
+    
     // add a back button in the navigation bar
 //    [self.navigationItem setHidesBackButton:NO];
     
@@ -182,6 +191,7 @@
 - (void)viewDidUnload {
     [self setTt:nil];
     [self setBackgroundImage:nil];
+    [self setHaveBF:nil];
     [super viewDidUnload];
 }
 

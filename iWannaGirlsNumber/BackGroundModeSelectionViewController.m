@@ -53,13 +53,22 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    [self.mainViewController setBackgroundImage:info[UIImagePickerControllerOriginalImage]];
-    [self dismissModalViewControllerAnimated:YES];
+    if (picker.view.tag == 0) {
+        [self.mainViewController setBackgroundImage:info [UIImagePickerControllerOriginalImage]];
+        [self dismissModalViewControllerAnimated:YES];
+    }
+    if (picker.view.tag == 1) {
+        
+
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.navigationController pushViewController:self.mainViewController animated:YES];
+    }
+
 }
 
 - (IBAction)placeAPicture:(id)sender {
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
-//    ipc.tag = 1;
+    ipc.view.tag = 1;
     ipc.delegate = self;
     [self presentViewController:ipc animated:YES completion:nil];
 }
