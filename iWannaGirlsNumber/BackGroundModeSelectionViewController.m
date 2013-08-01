@@ -57,4 +57,12 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (IBAction)placeAPicture:(id)sender {
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+//    ipc.tag = 1;
+    ipc.delegate = self;
+    [self presentViewController:ipc animated:YES completion:nil];
+}
+
+
 @end

@@ -100,6 +100,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             BackGroundModeSelectionViewController *vc = [[BackGroundModeSelectionViewController alloc] initWithNibName:@"BackGroundModeSelectionViewController" bundle:nil];
+            vc.mainViewController = self.vc;
             [[self navigationController] pushViewController:vc animated:YES];
         }
         else if (indexPath.row == 1){

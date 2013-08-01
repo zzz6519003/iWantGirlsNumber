@@ -138,6 +138,7 @@
     SettingViewController * sv = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
     sv.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     sv.delegate = self;
+    sv.vc = self;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:sv];
 
     [self presentViewController:nav animated:YES completion:nil];
@@ -180,6 +181,11 @@
 
 - (void)viewDidUnload {
     [self setTt:nil];
+    [self setBackgroundImage:nil];
     [super viewDidUnload];
+}
+
+- (void)setBackgroundImage:(UIImage *)backgroundImage {
+    [self.reallyBackgroundImage setImage:backgroundImage];
 }
 @end

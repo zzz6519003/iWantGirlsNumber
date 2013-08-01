@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneInput;
 
+@property (weak, nonatomic) IBOutlet UIImageView *reallyBackgroundImage;
+
 //TODO
 @property (strong, nonatomic) UITapGestureRecognizer *tapAnywhere;
 

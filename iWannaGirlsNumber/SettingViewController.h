@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 @class SettingViewController;
 
+@class ViewController;
+
 @protocol SettingViewControllerEnd <NSObject>
 
 - (void)settingViewControllerDidEnd:(SettingViewController *)sender;
@@ -28,5 +30,10 @@
 @property (strong, nonatomic) IBOutlet UITableViewCell *tutTableCell;
 
 @property (weak, nonatomic) IBOutlet UISwitch *tutSwitchSegment;
+
+@property (weak, nonatomic) ViewController *vc;
+
+
+
 
 @end
