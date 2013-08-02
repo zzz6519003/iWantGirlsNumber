@@ -53,7 +53,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,6 +72,9 @@
     }
     if (indexPath.row == 1) {
         return self.heightCell;
+    }
+    if (indexPath.row == 2) {
+        return self.haveBfCell;
     }
     return nil;
 }
@@ -152,6 +155,7 @@
     [self setHeightCell:nil];
     [self setBreastBig:nil];
     [self setHaveBf:nil];
+    [self setHaveBfCell:nil];
     [super viewDidUnload];
 }
 @end

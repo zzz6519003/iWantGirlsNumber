@@ -30,4 +30,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tt;
 
 @property (weak, nonatomic) IBOutlet FUISegmentedControl *haveBF;
+
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *aloneGroup;
 @end

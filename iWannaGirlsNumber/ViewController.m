@@ -66,6 +66,9 @@
     self.haveBF.deselectedColor = [UIColor silverColor];
     self.haveBF.dividerColor = [UIColor midnightBlueColor];
     self.haveBF.cornerRadius = 5.0;
+//    CGSize a = self.haveBF.bounds.size;
+//    a.height -= 10;
+//    self.haveBF.frame.size = a;
     
     // add a back button in the navigation bar
 //    [self.navigationItem setHidesBackButton:NO];
@@ -161,6 +164,12 @@
     if (self.backgroundImage != nil) {
         
     }
+    NSUserDefaults *df = [NSUserDefaults standardUserDefaults];
+    if ([df boolForKey:@"HaveBF"]) {
+        NSNumber *boolNumber = [NSNumber numberWithBool:NO];
+        [self.aloneGroup setValue:boolNumber forKey:@"hidden"];
+    }
+
 }
 
 
@@ -192,10 +201,13 @@
     [self setTt:nil];
     [self setBackgroundImage:nil];
     [self setHaveBF:nil];
+
+    [self setAloneGroup:nil];
     [super viewDidUnload];
 }
 
 - (void)setBackgroundImage:(UIImage *)backgroundImage {
     [self.reallyBackgroundImage setImage:backgroundImage];
 }
+
 @end

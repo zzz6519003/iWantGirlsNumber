@@ -16,5 +16,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *breastBig;
 
+@property (strong, nonatomic) IBOutlet UITableViewCell *haveBfCell;
+
 @property (weak, nonatomic) IBOutlet UISwitch *haveBf;
 @end
