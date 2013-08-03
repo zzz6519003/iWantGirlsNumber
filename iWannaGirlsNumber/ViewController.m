@@ -169,6 +169,10 @@
         NSNumber *boolNumber = [NSNumber numberWithBool:NO];
         [self.aloneGroup setValue:boolNumber forKey:@"hidden"];
     }
+    if (![df boolForKey:@"HaveBF"]) {
+        NSNumber *boolNumber = [NSNumber numberWithBool:YES];
+        [self.aloneGroup setValue:boolNumber forKey:@"hidden"];
+    }
 
 }
 
