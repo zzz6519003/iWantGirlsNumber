@@ -108,6 +108,7 @@
 		1868E639178E643C004AAADC /* MYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionView.m; sourceTree = "<group>"; };
 		1868E63A178E643C004AAADC /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		1868E63B178E643C004AAADC /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
+		18777C4E17ADF331002D6BFB /* NSObject_ContentConstantsForUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_ContentConstantsForUserDefaults.h; sourceTree = "<group>"; };
 		189E4FAB177937FF00302139 /* iWannaGirlsNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWannaGirlsNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189E4FAE177937FF00302139 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		189E4FB0177937FF00302139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -274,6 +275,7 @@
 				185C9BB0178BAE75007D3EF8 /* PureColorChooseViewController.xib */,
 				181D80FD178CF2090030897F /* ContentSettingViewController.h */,
 				181D80FE178CF2090030897F /* ContentSettingViewController.m */,
+				18777C4E17ADF331002D6BFB /* NSObject_ContentConstantsForUserDefaults.h */,
 				181D80FF178CF2090030897F /* ContentSettingViewController.xib */,
 				1833CD1517A8830F002DA572 /* NSObject+Sounds.h */,
 				1833CD1617A8830F002DA572 /* NSObject+Sounds.m */,

@@ -149,6 +149,10 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
+
 
 - (void)viewDidUnload {
     [self setNameCell:nil];
